@@ -39,4 +39,12 @@ class Toy implements Comparable<Toy> {
         }
         return 0;
     }
+    @Override
+    public String toString() {
+        return "Toy{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
 }
