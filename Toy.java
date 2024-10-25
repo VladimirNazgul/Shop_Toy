@@ -28,4 +28,15 @@ class Toy implements Comparable<Toy> {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public int compareTo(Toy other) {
+        // Сортировка по весу игрушки
+        if (this.weight > other.weight) {
+            return 1;
+        } else if (this.weight < other.weight) {
+            return -1;
+        }
+        return 0;
+    }
 }
